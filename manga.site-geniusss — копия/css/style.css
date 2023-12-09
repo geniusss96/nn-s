@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Kdam+Thmor+Pro&family=Montserrat:wght@700&family=Mukta&family=Noto+Serif&family=Rubik:wght@500&family=Signika+Negative:wght@500&family=Unbounded:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Kdam+Thmor+Pro&family=Montserrat:wght@700&family=Noto+Serif&family=Rubik:wght@500&family=Signika+Negative:wght@500&family=Unbounded:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Kdam+Thmor+Pro&family=Montserrat:wght@700&family=Noto+Serif&family=Signika+Negative:wght@500&family=Unbounded:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(211, 51, 51);
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: black;
+}
+.text{
+    text-align: center;
+    font-family: 'Eater', serif;
+    position: fixed;
+    top: 5px;
+    left: 20px;
+    color: white;
+}
+.top-manga{
+    font-family: 'Rubik', sans-serif;
+    position: fixed;
+    top: 12px;
+    color: white;
+    left: 300px;
+}
+.top-manga:hover{
+    padding: 1px 5px;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    transition: background-color, color, 0.3s ease-in-out;
+}
+.search{
+    width: 240px;
+    left: 1200px;
+    position: fixed;
+    top: 10px;
+    border-radius: 16px;
+    border: 0;
+    height: 30px;
+}
+.ad{
+    animation-timing-function: linear;
+    animation-name: sss;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+
+    position: fixed;
+    top: 50px;
+} 
+@keyframes sss {
+    0% {left: 0;}
+    50% {left: 1720px;}
+    100% {left: 0;}
+}
+.anime-ramka-bleach{
+    border-radius: 16px;
+    background-color: black;
+    border: 1px solid black;
+    width: 270px;
+    height: 380px;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+
+}
+.anime-ramka-bleach-text{
+    position: absolute;
+    width: 225px;
+    height: 100px;
+    border-radius: 16px;
+    top: 270px;
+    left: 20px;
+    border: 1px solid rgb(246, 246, 246);
+    background-color: rgb(248, 246, 246);
+}
+.berserk{
+    position: absolute;
+    left: 300px;
+}
+.anime-ramka-berserk{
+    border-radius: 16px;
+    background-color: black;
+    border: 1px solid black;
+    width: 270px;
+    height: 380px;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+
+}
+.anime-ramka-berserk-text{
+    position: absolute;
+    width: 225px;
+    height: 100px;
+    border-radius: 16px;
+    top: 270px;
+    left: 20px;
+    border: 1px solid rgb(246, 246, 246);
+    background-color: rgb(248, 246, 246);
+}
+.eva{
+    position: absolute;
+    left: 600px;
+}
+.anime-ramka-eva{
+    border-radius: 16px;
+    background-color: black;
+    border: 1px solid black;
+    width: 270px;
+    height: 380px;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+
+}
+.anime-ramka-eva-text{
+    position: absolute;
+    width: 225px;
+    height: 100px;
+    border-radius: 16px;
+    top: 270px;
+    left: 20px;
+    border: 1px solid rgb(246, 246, 246);
+    background-color: rgb(248, 246, 246);
+}
+.berserk-img-menu{
+    position: absolute; 
+    left: 13px; 
+    width: 245px; 
+    height: 260px;
+}
+.eva-img-menu{
+    position: absolute; 
+    left: 13px; 
+    width: 245px; 
+    height: 260px;
+}
+.bleach-img-menu{
+    position: absolute; 
+    left: 13px; 
+    width: 245px; 
+    height: 260px;
+}
+@media screen and (max-width: 968px) {
+    .navbar{
+        max-width: 100%;
+    }
+    .ad{
+        animation-timing-function: linear;
+        animation-name: sss;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+    
+        position: fixed;
+        top: 50px;
+    } 
+    @keyframes sss {
+        0% {left: 0;}
+        50% {left: 695px;}
+        100% {left: 0;}
+}
+}
+@media screen and (max-width: 767px) {
+    .bleach{
+        .bleach-img-menu{
+            width: 200px;
+            height: 200px;
+        }
+        .anime-ramka-bleach{
+            border-radius: 16px;
+            background-color: black;
+            border: 1px solid black;
+            width: 225px;
+            height: 320px;
+            position: absolute;
+            top: 200px;
+            left: 20px;
+        
+        }
+        .anime-ramka-bleach-text{
+            position: absolute;
+            width: 183px;
+            height: 100px;
+            border-radius: 16px;
+            top: 210px;
+            left: 20px;
+            border: 1px solid rgb(246, 246, 246);
+            background-color: rgb(248, 246, 246);
+        } 
+    }
+    .berserk{
+        left: 240px;
+        .berserk-img-menu{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+        .anime-ramka-berserk{
+            border-radius: 16px;
+            background-color: black;
+            border: 1px solid black;
+            width: 225px;
+            height: 320px;
+            position: absolute;
+            top: 200px;
+            left: 20px;
+        
+        }
+        .anime-ramka-berserk-text{
+            position: absolute;
+            width: 183px;
+            height: 100px;
+            border-radius: 16px;
+            top: 210px;
+            left: 20px;
+            border: 1px solid rgb(246, 246, 246);
+            background-color: rgb(248, 246, 246);
+        } 
+    }
+    .eva{
+        left: 480px;
+        .eva-img-menu{
+            width: 200px;
+            height: 200px;
+        }
+        .anime-ramka-eva{
+            border-radius: 16px;
+            background-color: black;
+            border: 1px solid black;
+            width: 225px;
+            height: 320px;
+            position: absolute;
+            top: 200px;
+            left: 20px;
+        
+        }
+        .anime-ramka-eva-text{
+            position: absolute;
+            width: 183px;
+            height: 100px;
+            border-radius: 16px;
+            top: 210px;
+            left: 20px;
+            border: 1px solid rgb(246, 246, 246);
+            background-color: rgb(248, 246, 246);
+        } 
+    }
+    .top-manga{
+        position: absolute;
+        left: 170px;
+    }
+    .navbar{
+        max-width: 100%;
+    .search{
+        position: fixed;
+        left: 500px;
+        width: 190px;
+    }
+    .top-manga{
+        position: fixed;
+        left: 160px;
+    }
+    }
+    .ad{
+        animation-timing-function: linear;
+        animation-name: sss;
+        animation-duration: 16s;
+        animation-iteration-count: infinite;
+    
+        position: fixed;
+        top: 50px;
+    } 
+    @keyframes sss {
+        0% {left: 0;}
+        50% {left: 555px;}
+        100% {left: 0;}
+}
+}
+@media screen and (max-width:320px) {
+    .bleach{
+        .bleach-img-menu{
+            width: 200px;
+            height: 200px;
+        }
+        .anime-ramka-bleach{
+            border-radius: 16px;
+            background-color: black;
+            border: 1px solid black;
+            width: 225px;
+            height: 320px;
+            position: absolute;
+            top: 200px;
+            left: 20px;
+        
+        }
+        .anime-ramka-bleach-text{
+            position: absolute;
+            width: 183px;
+            height: 100px;
+            border-radius: 16px;
+            top: 210px;
+            left: 20px;
+            border: 1px solid rgb(246, 246, 246);
+            background-color: rgb(248, 246, 246);
+        } 
+    }
+    .berserk{
+        left: 240px;
+        .berserk-img-menu{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+        .anime-ramka-berserk{
+            border-radius: 16px;
+            background-color: black;
+            border: 1px solid black;
+            width: 225px;
+            height: 320px;
+            position: absolute;
+            top: 200px;
+            left: 20px;
+        
+        }
+        .anime-ramka-berserk-text{
+            position: absolute;
+            width: 183px;
+            height: 100px;
+            border-radius: 16px;
+            top: 210px;
+            left: 20px;
+            border: 1px solid rgb(246, 246, 246);
+            background-color: rgb(248, 246, 246);
+        } 
+    }
+    .eva{
+        left: 480px;
+        .eva-img-menu{
+            width: 200px;
+            height: 200px;
+        }
+        .anime-ramka-eva{
+            border-radius: 16px;
+            background-color: black;
+            border: 1px solid black;
+            width: 225px;
+            height: 320px;
+            position: absolute;
+            top: 200px;
+            left: 20px;
+        
+        }
+        .anime-ramka-eva-text{
+            position: absolute;
+            width: 183px;
+            height: 100px;
+            border-radius: 16px;
+            top: 210px;
+            left: 20px;
+            border: 1px solid rgb(246, 246, 246);
+            background-color: rgb(248, 246, 246);
+        } 
+    }
+    .top-manga{
+        position: absolute;
+        left: 170px;
+    }
+}
