@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Eater&family=Kdam+Thmor+Pro&family=Montserrat:wght@500;600;700;900&family=Mukta&family=Noto+Serif&family=Rubik+Doodle+Triangles&family=Rubik:wght@500&family=Signika+Negative:wght@500&family=Silkscreen&family=Unbounded:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Eater&family=Kdam+Thmor+Pro&family=Montserrat:wght@700&family=Mukta&family=Noto+Serif&family=Rubik+Doodle+Triangles&family=Rubik:wght@500&family=Signika+Negative:wght@500&family=Silkscreen&family=Unbounded:wght@600&display=swap');
+* {
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color:  rgb(255, 249, 217);
+  }
+  .nav-title{
+    font-size: 24px;
+    font-family: 'Cabin Sketch', sans-serif;
+  }
+  .nav {
+    height: 70px;
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 32px;
+    color: rgb(255, 249, 217);
+    padding: 14px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 20px;
+  }
+  
+  
+  .nav > .nav-links > a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    padding: 23px 13px 23px 10px;
+    text-decoration: none;
+    color:  rgb(255, 249, 217);
+  }
+  
+  .nav > .nav-links > a:hover {
+        border: 1px solid rgb(255, 249, 217);
+        background-color: rgb(255, 249, 217);
+        color: black;
+        transform: scale(1.1) ease-in-out 0.8s, background-color cubic-bezier(0.4, 0.0, 0.2, 1.0) 0.3s;
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+     }
+     .nav > .nav-links > a:hover:not(:active) {
+        opacity: 0.8;
+    }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  .regestration{
+    font-size: 18px;
+    position: fixed;
+    top: 18px;
+    left: 1600px;
+    color: rgb(255, 249, 217);
+    font-weight: 500;
+}
+.regestration:hover {
+    border: 1px solid rgb(255, 249, 217);
+    background-color: rgb(255, 249, 217);
+    color: black;
+    transform: scale(1.1) ease-in-out 0.8s, background-color cubic-bezier(0.4, 0.0, 0.2, 1.0) 0.3s;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+ }
+.regestration:hover:not(:active) {
+    opacity: 0.8;
+}
+.katalog{
+    font-size: 18px;
+    position: fixed;
+    top: 18px;
+    left: 500px;
+    color: rgb(255, 249, 217);
+}
+
+.dropdown{
+    z-index: 10;
+    position: fixed;
+    top: 8px;
+    left: 530px;
+    display: inline-block;
+}
+  
+.dropdown-button{
+    background-color: black;
+    color: rgb(255, 249, 217);
+    padding: 10px;
+    border: 0px;
+    cursor: pointer;
+    font-size: 18px;
+}
+  
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: rgb(255, 254, 245);
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+  
+.dropdown-content li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+  
+.dropdown:hover .dropdown-content{
+    display: block;
+    border: 1px solid rgb(255, 249, 217);
+    background-color: rgb(255, 249, 217);
+    color: black;
+    transform: scale(1.1) ease-in-out 0.8s, background-color cubic-bezier(0.4, 0.0, 0.2, 1.0) 0.3s;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+.dropdown:hover:not(:active){
+    opacity: 0.8;
+}
+
+  @media (max-width:800px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 10px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 69px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
