@@ -38,7 +38,7 @@
   .nav > .nav-links {
     display: inline;
     float: right;
-    font-size: 20px;
+    font-size: 16px;
   }
   
   
@@ -46,7 +46,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     display: inline-block;
-    padding: 23px 13px 23px 10px;
+    padding: 26px 13px 23px 10px;
     text-decoration: none;
     color:  rgb(255, 249, 217);
   }
@@ -57,8 +57,9 @@
         color: black;
         transform: scale(1.1) ease-in-out 0.8s, background-color cubic-bezier(0.4, 0.0, 0.2, 1.0) 0.3s;
         opacity: 1;
-        transition: opacity 0.2s ease-in-out;
-     }
+
+        transition: all 0.3s ease-in-out;
+      }
      .nav > .nav-links > a:hover:not(:active) {
         opacity: 0.8;
     }
@@ -67,79 +68,25 @@
     display: none;
   }
   
-  .regestration{
-    font-size: 18px;
-    position: fixed;
-    top: 18px;
-    left: 1600px;
-    color: rgb(255, 249, 217);
-    font-weight: 500;
-}
-.regestration:hover {
-    border: 1px solid rgb(255, 249, 217);
-    background-color: rgb(255, 249, 217);
-    color: black;
-    transform: scale(1.1) ease-in-out 0.8s, background-color cubic-bezier(0.4, 0.0, 0.2, 1.0) 0.3s;
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
- }
-.regestration:hover:not(:active) {
-    opacity: 0.8;
-}
-.katalog{
-    font-size: 18px;
-    position: fixed;
-    top: 18px;
-    left: 500px;
-    color: rgb(255, 249, 217);
-}
+.katalog-menu{
+  
+   
+  }
 
-.dropdown{
-    z-index: 10;
-    position: fixed;
-    top: 8px;
-    left: 530px;
-    display: inline-block;
-}
-  
-.dropdown-button{
-    background-color: black;
-    color: rgb(255, 249, 217);
-    padding: 10px;
-    border: 0px;
-    cursor: pointer;
-    font-size: 18px;
-}
-  
-.dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: black;
-    color: rgb(255, 254, 245);
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-}
-  
-.dropdown-content li a{
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-}
-  
-.dropdown:hover .dropdown-content{
-    display: block;
+  .katalog-nav{
+    text-align: center;
     border: 1px solid rgb(255, 249, 217);
-    background-color: rgb(255, 249, 217);
-    color: black;
-    transform: scale(1.1) ease-in-out 0.8s, background-color cubic-bezier(0.4, 0.0, 0.2, 1.0) 0.3s;
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
-}
-.dropdown:hover:not(:active){
-    opacity: 0.8;
-}
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 70px;
+    color: rgb(255, 249, 217);
+  }
 
+  .katalog-nav h3 {
+    border-bottom: 1px solid rgb(255, 249, 217);
+    border-radius: 5px;
+  }
+  
   @media (max-width:800px) {
     .nav > .nav-btn {
       display: inline-block;
@@ -184,4 +131,8 @@
       height: calc(100vh - 50px);
       overflow-y: auto;
     }
+  .katalog-nav{
+    width: 100%;
+    height: 40px;
+  }
   }
